@@ -21,6 +21,7 @@
   <img src="https://img.shields.io/badge/DOMPurify-3-ED1C24" alt="DOMPurify 3" />
   <img src="https://img.shields.io/badge/marked-15-CC0000" alt="marked 15" />
   <img src="https://img.shields.io/badge/Zod-3-2684FF?logo=zod&amp;logoColor=white" alt="Zod 3" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
 </p>
 
 </div>
@@ -35,6 +36,7 @@
 - [🧰 Scripts](#-scripts)
 - [💡 Philosophy](#-philosophy)
 - [🧭 Project Structure](#-project-structure)
+- [📄 License](#-license)
 
 ## ✨ Features
 
@@ -101,6 +103,10 @@ src/
 ├── tests/        # Vitest suites
 └── types/        # domain models
 ```
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
 
 ---
 
