@@ -7,6 +7,12 @@
 <p><em>A syllabus-first study and revision platform for LL.B. students.</em></p>
 
 <p>
+  <a href="https://mylegal-iota.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-mylegal--iota.vercel.app-0F766E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Live demo: mylegal-iota.vercel.app" />
+  </a>
+</p>
+
+<p>
   <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&amp;logoColor=black" alt="React 19" />
   <img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&amp;logoColor=white" alt="TypeScript 5.7" />
   <img src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite&amp;logoColor=white" alt="Vite 6" />
@@ -59,6 +65,8 @@ npm run dev
 ```
 
 The dev server starts on `http://localhost:5173`. To produce a production build in `dist/`, run `npm run build`.
+
+Prefer not to install anything? Use the hosted version at [mylegal-iota.vercel.app](https://mylegal-iota.vercel.app/).
 
 ## 🧰 Scripts
 
