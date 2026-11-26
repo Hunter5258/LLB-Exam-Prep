@@ -1,0 +1,101 @@
+/* Foundational surface primitives — L0 to L5, inset and pressed.
+   All elevations reference shared shadow tokens; never redefine shadows here. */
+
+.surface {
+  background: var(--surface-base-bg);
+  border-radius: var(--card-radius);
+}
+.surface--flat {
+  background: var(--surface-reading-bg);
+  box-shadow: var(--shadow-flat);
+  border: var(--bw-thin) solid var(--color-border);
+}
+.surface--base {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-raised-sm);
+  border: var(--bw-thin) solid var(--color-border);
+}
+.surface--raised {
+  background: var(--surface-raised-bg);
+  box-shadow: var(--shadow-raised);
+  border: var(--bw-thin) solid var(--color-border);
+}
+.surface--hover:hover {
+  box-shadow: var(--shadow-hover);
+}
+.surface--inset {
+  background: var(--surface-inset-bg);
+  box-shadow: var(--shadow-inset);
+  border: var(--bw-thin) solid var(--color-border);
+}
+.surface--inset-sm {
+  background: var(--surface-inset-bg);
+  box-shadow: var(--shadow-inset-sm);
+}
+.surface--pressed {
+  background: var(--color-surface-pressed);
+  box-shadow: var(--shadow-pressed);
+}
+.surface--floating {
+  background: var(--surface-raised-bg);
+  box-shadow: var(--shadow-floating);
+  border: var(--bw-thin) solid var(--color-border);
+}
+.surface--modal {
+  background: var(--surface-raised-bg);
+  box-shadow: var(--shadow-modal);
+  border: var(--bw-thin) solid var(--color-border);
+}
+
+/* Reusable surface components */
+.card {
+  background: var(--surface-raised-bg);
+  border: var(--bw-thin) solid var(--color-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-raised-sm);
+  padding: var(--card-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap);
+  min-inline-size: 0;
+}
+.card--interactive {
+  cursor: pointer;
+  transition: box-shadow var(--motion-base) var(--ease), transform var(--motion-base) var(--ease);
+}
+.card--interactive:hover { box-shadow: var(--shadow-hover); }
+.card--interactive:active {
+  box-shadow: var(--shadow-inset-sm);
+  transform: translateY(1px);
+}
+.card--flat {
+  background: var(--surface-reading-bg);
+  box-shadow: var(--shadow-flat);
+}
+.card--inset {
+  background: var(--surface-inset-bg);
+  box-shadow: var(--shadow-inset-sm);
+}
+.card--compact { padding: var(--sp-3); gap: var(--sp-2); }
+.card__header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sp-3); }
+.card__title { font-weight: 650; font-size: var(--fs-lg); line-height: var(--lh-tight); }
+.card__body { font-size: var(--fs-sm); color: var(--color-text-secondary); }
+.card__footer { display: flex; align-items: center; gap: var(--sp-2); flex-wrap: wrap; }
+
+.panel {
+  background: var(--color-surface);
+  border: var(--bw-thin) solid var(--color-border);
+  border-radius: var(--r-3);
+  padding: var(--sp-4);
+}
+.panel--inset {
+  background: var(--surface-inset-bg);
+  box-shadow: var(--shadow-inset-sm);
+}
+
+.divider {
+  height: var(--bw-thin);
+  background: var(--color-border);
+  border: 0;
+  margin: var(--sp-4) 0;
+}

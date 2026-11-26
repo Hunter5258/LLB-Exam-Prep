@@ -1,0 +1,173 @@
+/* Typographic hierarchy. Restrained, sans-serif, academic. */
+
+.t-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+.t-subtitle {
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  line-height: var(--lh-normal);
+}
+.t-section {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+}
+.t-unit {
+  font-size: var(--fs-lg);
+  font-weight: 650;
+  line-height: var(--lh-tight);
+}
+.t-topic {
+  font-size: var(--fs-md);
+  font-weight: 650;
+}
+.t-body {
+  font-size: var(--fs-md);
+  line-height: var(--lh-reading);
+}
+.t-support {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-normal);
+}
+.t-meta {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+.t-label {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.t-button {
+  font-size: var(--fs-sm);
+  font-weight: var(--button-font-weight);
+  letter-spacing: 0.01em;
+}
+.t-overline {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* Long-form legal reading surface. */
+.prose {
+  font-family: var(--font-reading);
+  font-size: var(--fs-md);
+  line-height: var(--lh-reading);
+  color: var(--color-text-primary);
+  max-width: var(--measure-reading);
+}
+.prose h2,
+.prose h3,
+.prose h4 {
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-3);
+  line-height: var(--lh-tight);
+  color: var(--color-text-primary);
+}
+.prose h2 { font-size: var(--fs-xl); }
+.prose h3 { font-size: var(--fs-lg); }
+.prose h4 { font-size: var(--fs-md); }
+.prose p {
+  margin-bottom: var(--sp-4);
+  overflow-wrap: anywhere;
+}
+.prose ul,
+.prose ol {
+  margin: 0 0 var(--sp-4) var(--sp-5);
+  padding-left: var(--sp-2);
+}
+.prose li {
+  margin-bottom: var(--sp-2);
+  padding-left: var(--sp-1);
+}
+.prose li::marker {
+  color: var(--color-primary);
+}
+.prose strong { font-weight: 650; }
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--color-surface-inset);
+  padding: 1px 5px;
+  border-radius: var(--r-1);
+}
+.prose a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-strong);
+  text-underline-offset: 3px;
+}
+.prose a:hover { text-decoration-color: var(--color-primary); }
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--sp-5);
+  font-size: var(--fs-sm);
+}
+.prose th,
+.prose td {
+  border: var(--bw-thin) solid var(--color-border);
+  padding: var(--sp-2) var(--sp-3);
+  text-align: left;
+  vertical-align: top;
+}
+.prose th { background: var(--color-surface-inset); font-weight: 650; }
+.prose blockquote {
+  border-left: var(--bw-strong) solid var(--color-primary);
+  padding: var(--sp-2) var(--sp-4);
+  margin: 0 0 var(--sp-5);
+  background: var(--color-surface-inset);
+  border-radius: 0 var(--r-2) var(--r-2) 0;
+  color: var(--color-text-secondary);
+  overflow-wrap: anywhere;
+}
+
+/* Legal content treatments. */
+.legal-ref {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--r-1);
+  background: var(--color-surface-inset);
+  border: var(--bw-thin) solid var(--color-border);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  overflow-wrap: anywhere;
+}
+.legal-block {
+  border: var(--bw-thin) solid var(--color-border);
+  border-left: var(--bw-strong) solid var(--color-primary);
+  border-radius: var(--r-2);
+  background: var(--color-surface-raised);
+  padding: var(--sp-4);
+  margin-bottom: var(--sp-5);
+}
+.legal-block h4 {
+  margin: 0 0 var(--sp-2);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.legal-note {
+  border: var(--bw-thin) dashed var(--color-border-strong);
+  border-radius: var(--r-2);
+  padding: var(--sp-3);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+}

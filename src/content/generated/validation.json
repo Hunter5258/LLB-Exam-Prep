@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-11-22T18:13:51.201Z",
+  "counts": {
+    "subjects": 2,
+    "units": 10,
+    "topics": 47,
+    "papers": 18,
+    "questions": 476,
+    "predictions": 55,
+    "reports": 2
+  },
+  "problems": [],
+  "mappingNote": "All topic-question mappings are provisional text matches (verified source wording, heuristic association). No mapping is claimed as verified."
+}

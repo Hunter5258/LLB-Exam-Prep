@@ -1,0 +1,184 @@
+/* ============================================================
+   DESIGN TOKENS — three layers: primitive → semantic → component
+   Colours are sampled/approximated from design-references/
+   neumorphic-ui-reference.jpg. Never use raw hex in components.
+   ============================================================ */
+
+:root {
+  /* ---- Primitive: warm neutral family ---- */
+  --p-ivory-50: #faf6ec;
+  --p-ivory-100: #f5efe2;
+  --p-ivory-200: #f0e9da;
+  --p-ivory-300: #e9e0cd;
+  --p-ivory-400: #e0d5bd;
+  --p-ivory-500: #d4c7ac;
+  --p-ivory-600: #c2b394;
+  --p-ivory-700: #a89978;
+  --p-taupe-500: #9a8d78;
+  --p-taupe-600: #7d7060;
+  --p-taupe-700: #635749;
+  --p-taupe-800: #4a4136;
+  --p-taupe-900: #332d26;
+
+  /* ---- Primitive: teal family ---- */
+  --p-teal-400: #2a7d74;
+  --p-teal-500: #196a63;
+  --p-teal-600: #0f5b55;
+  --p-teal-700: #0c4b46;
+  --p-teal-800: #093a36;
+
+  /* ---- Primitive: status family (restrained) ---- */
+  --p-green-600: #3f7a68;
+  --p-amber-500: #c4883e;
+  --p-amber-600: #a86f2d;
+  --p-red-600: #b45545;
+
+  /* ---- Primitive: shadow tones ---- */
+  --p-shadow-dark: rgba(105, 89, 65, 0.20);
+  --p-shadow-dark-soft: rgba(105, 89, 65, 0.13);
+  --p-shadow-light: rgba(255, 253, 244, 0.92);
+
+  /* ---- Primitive: spacing ---- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+
+  /* ---- Primitive: radius ---- */
+  --r-1: 4px;
+  --r-2: 8px;
+  --r-3: 12px;
+  --r-4: 16px;
+  --r-5: 24px;
+
+  /* ---- Primitive: border ---- */
+  --bw-thin: 1px;
+  --bw-regular: 2px;
+  --bw-strong: 4px;
+
+  /* ---- Semantic: colour ---- */
+  --color-background: var(--p-ivory-200);
+  --color-surface: var(--p-ivory-100);
+  --color-surface-raised: var(--p-ivory-50);
+  --color-surface-inset: var(--p-ivory-300);
+  --color-surface-pressed: var(--p-ivory-400);
+
+  --color-primary: var(--p-teal-600);
+  --color-primary-hover: var(--p-teal-700);
+  --color-primary-pressed: var(--p-teal-800);
+  --color-on-primary: var(--p-ivory-50);
+
+  --color-text-primary: var(--p-taupe-900);
+  --color-text-secondary: var(--p-taupe-600);
+  --color-text-muted: var(--p-taupe-500);
+
+  --color-border: var(--p-ivory-500);
+  --color-border-strong: var(--p-ivory-600);
+
+  --color-success: var(--p-green-600);
+  --color-warning: var(--p-amber-500);
+  --color-danger: var(--p-red-600);
+  --color-info: var(--p-teal-500);
+
+  /* ---- Semantic: elevation / shadow ---- */
+  --shadow-flat: none;
+  --shadow-raised:
+    7px 7px 16px var(--p-shadow-dark),
+    -7px -7px 16px var(--p-shadow-light);
+  --shadow-raised-sm:
+    4px 4px 9px var(--p-shadow-dark-soft),
+    -4px -4px 9px var(--p-shadow-light);
+  --shadow-hover:
+    10px 10px 22px var(--p-shadow-dark),
+    -10px -10px 22px var(--p-shadow-light);
+  --shadow-inset:
+    inset 6px 6px 12px var(--p-shadow-dark),
+    inset -6px -6px 12px var(--p-shadow-light);
+  --shadow-inset-sm:
+    inset 3px 3px 7px var(--p-shadow-dark-soft),
+    inset -3px -3px 7px var(--p-shadow-light);
+  --shadow-pressed:
+    inset 8px 8px 16px var(--p-shadow-dark),
+    inset -8px -8px 16px var(--p-shadow-light);
+  --shadow-focus: 0 0 0 3px rgba(15, 91, 85, 0.28);
+  --shadow-floating:
+    14px 18px 36px rgba(85, 70, 48, 0.28),
+    -6px -6px 18px var(--p-shadow-light);
+  --shadow-modal:
+    22px 28px 64px rgba(72, 58, 40, 0.34),
+    -8px -8px 24px var(--p-shadow-light);
+
+  /* ---- Semantic: motion ---- */
+  --motion-fast: 120ms;
+  --motion-base: 180ms;
+  --motion-slow: 220ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+
+  /* ---- Semantic: typography ---- */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-reading: var(--font-sans);
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2.125rem;
+  --lh-tight: 1.25;
+  --lh-normal: 1.5;
+  --lh-reading: 1.72;
+  --measure-reading: 72ch;
+  --measure-page: 1180px;
+
+  /* ---- Component: surfaces ---- */
+  --surface-base-bg: var(--color-surface);
+  --surface-raised-bg: var(--color-surface-raised);
+  --surface-inset-bg: var(--color-surface-inset);
+  --surface-reading-bg: var(--p-ivory-50);
+
+  /* ---- Component: buttons ---- */
+  --button-height: 40px;
+  --button-height-sm: 32px;
+  --button-height-lg: 48px;
+  --button-padding-x: var(--sp-4);
+  --button-radius: var(--r-3);
+  --button-font-weight: 600;
+
+  /* ---- Component: inputs ---- */
+  --input-height: 42px;
+  --input-padding-x: var(--sp-3);
+  --input-radius: var(--r-3);
+
+  /* ---- Component: cards ---- */
+  --card-radius: var(--r-4);
+  --card-padding: var(--sp-5);
+  --card-gap: var(--sp-4);
+
+  /* ---- Component: navigation ---- */
+  --nav-width: 244px;
+  --topbar-height: 68px;
+  --nav-item-height: 42px;
+  --nav-active-bg: var(--color-surface-inset);
+  --focus-ring: var(--shadow-focus);
+}
+
+/* Optional reading-comfort settings, applied on the root element. */
+:root[data-text-size='large'] {
+  --fs-base: 1rem;
+  --fs-md: 1.0625rem;
+  --lh-reading: 1.8;
+}
+:root[data-text-size='x-large'] {
+  --fs-base: 1.0625rem;
+  --fs-md: 1.125rem;
+  --lh-reading: 1.85;
+}
+:root[data-measure='wide'] {
+  --measure-reading: 88ch;
+}

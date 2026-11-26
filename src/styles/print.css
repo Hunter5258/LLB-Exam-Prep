@@ -1,0 +1,18 @@
+/* Print: flatten the neumorphic treatment for readable handouts. */
+@media print {
+  :root { --color-background: #fff; --color-surface-raised: #fff; --color-surface: #fff; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .app-sidebar, .app-topbar, .mobile-bottom-nav, .page__actions,
+  .toast-stack, .overlay, .breadcrumbs, .progress-ring, .btn { display: none !important; }
+  .app-shell { display: block; }
+  .app-main { padding: 0; }
+  .page { max-width: none; }
+  .card, .surface--raised, .surface--base, .panel, .list-item, .table-wrap {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    background: #fff !important;
+    break-inside: avoid;
+  }
+  .prose { max-width: none; }
+  a { color: #000; text-decoration: underline; }
+}
